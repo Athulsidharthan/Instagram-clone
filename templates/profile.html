@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/profile.css' %}"> {% endblock %}
+
+
+<title>{% block title %} Profile {% endblock %}</title>
+
+{% block content %} 
+
+
+        <div class="profile">
+
+            <div class = "profiletop">
+                <div class="profileimage">
+                    <img src="{{profile.image.url}}" alt="">
+                </div>
+                <div class="profileinfo">
+                    <div class="profileinfo1">
+                        <h3>{{profile.user}}</h3>
+                        <a href="/editprofile"><button class="profileinfo1button ">Edit profile</button></a>
+                        <a href="/"><button class="profileinfo1button profileinfo1buttonlogout">Log out</button></a>
+                    </div>
+
+                    <div class="profileinfo2">
+                        <h5><span>6</span> posts</h5>
+                        <h5><span>369K</span> followers</h5>
+                        <h5><span>200K</span> following</h5>
+                    </div>
+
+                    <div class="profileinfo3">
+                        <h4>{{profile.name}}</h4>
+                        <h5>{{profile.bio}}</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="line"></div> 
+            <img class="tablecell"  src="{% static '/images/tablecell.png' %}"  alt="">
+            <div class="line" style="margin: 3px;"></div>
+
+            <div class = "profilebottom">
+
+                {% for i in post %}
+
+                <div>
+                    <div>
+                        <a href="{% url 'views' i.id %}">
+                            <div class="profilebottomimg"><img src="{{i.image.url}}" alt=""></div>
+                        </a>
+                    </div>
+                    <div class = "profilebottomedit">
+                        <a href="{% url 'editpost' i.id %}"><h4>Edit</h4></a>
+                        <a href="{% url 'delete' i.id %}"><h4>Delete</h4></a>
+                    </div>
+                </div>
+
+                {% endfor %}        
+
+            </div>
+
+        </div>
+
+{% endblock %}

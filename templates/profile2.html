@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/profile2.css' %}"> {% endblock %}
+
+<title>{% block title %} Profile {% endblock %}</title>
+
+{% block content %} 
+
+        <div class="profile">
+
+            <div class = "profiletop">
+                <div class="profileimage">
+                    <img src="{{p.image.url}}" alt="">
+                </div>
+                <div class="profileinfo">
+                    <div class="profileinfo1">
+                        <h3>{{p.name}}</h3>
+                    </div>
+
+                    <div class="profileinfo2">
+                        <h5><span>6</span> posts</h5>
+                        <h5><span>369K</span> followers</h5>
+                        <h5><span>200k</span> following</h5>
+                    </div>
+
+                    <div class="profileinfo3">
+                        <h4>{{p.name}}</h4>
+                        <h5>{{p.bio}}</h5>
+                    </div>
+
+                </div>
+            </div>
+           
+
+            <div class="line"></div> 
+            <img class="tablecell"  src="{% static '/images/tablecell.png' %}"  alt="">
+            <div class="line" style="margin: 3px;"></div>
+
+
+            <div class = "profilebottom">
+
+                {% for i in a %}
+
+                <div>
+                    <div>
+                        <a href="{% url 'views' i.id %}">
+                            <div class="profilebottomimg"><img src="{{i.image.url}}" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+
+                {% endfor %}        
+
+            </div>
+
+        </div>
+
+{% endblock %}

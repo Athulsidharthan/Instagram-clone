@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/feed.css' %}"> 
+
+{% endblock %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %} 
+
+    <div>
+
+        <div class="mainleft">
+            
+            <div class="mainleftstatus">
+                {% for i in b reversed %}
+                <a href="/profile2/{{i.user.profile.id}}">
+                <div class="mainleftstatusimg">   
+                    <img src="{{i.image.url}}" alt="">
+                </div></a>
+                {% endfor %}
+            </div>
+
+            {% for i in a reversed%}
+            <a href="/profile2/{{i.user.profile.id}}">
+            <div class="mainleftcontainer">
+    
+                <div class="mainleftcontainerfull">
+                    <div class="mainleftcontainerimg"><img src="{{i.user.profile.image.url}}" alt=""></div></a>
+
+                    <a href="/profile2/{{i.user.profile.id}}">
+                        <div class="mainleftcontainername"><h5>{{i.user.profile.user}}</h5></div>
+                    </a>
+
+                </div>
+
+                <a href="{% url 'views' i.id %}">
+                <div class="containerimg">
+                    <img class = "image" src="{{i.image.url}}" alt="">
+                </div>
+                </a>
+
+                <div class="containershare">
+                    <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment" style="transform:scaleX(-1);"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>   
+                </div>
+
+                <div class="likes">
+                    <h5>360k likes</h5>
+                </div>
+                
+                <div class="containercomments">
+                    <h5>{{i.user.profile.user}}</h5>&nbsp;&nbsp;<h6>{{i.caption}}</h6>
+                </div>
+
+                <div></div>
+                
+            </div>
+
+            <div class="line"></div>
+            
+            {% endfor %}
+
+        </div>
+
+
+    </div>
+
+    <div class="suggestions">
+        <div class="proimgid">
+
+        <div class="primg">
+            <img src="{{ user.profile.image.url}}" alt="">
+        </div>
+        <div class="pruser">
+           <h3> {{user.profile.user}} </h3>
+        </div>
+
+        </div>
+
+        <h4 class="suggested">Suggested for you</h4>
+        <div class="line"></div>
+
+        <div class="sugg">
+            <div class="suggimg">
+                <img src="{% static '/images/dhanushpropic.jpeg' %}" alt="">
+                <div>
+                <h4>Dhanush</h4>
+                </div>
+                <span class="image-caption"> follow </span>
+            </div>
+        </div>
+
+        <div class="sugg">
+            <div class="suggimg">
+                <img src="{% static '/images/srkpropic.jpeg' %}" alt="">
+                <div>
+                <h4>Shah Rukh Khan</h4>
+                </div>
+                <span class="image-caption"> follow </span>
+            </div>
+        </div>
+
+        <div class="sugg">
+            <div class="suggimg">
+                <img src="{% static '/images/nazriya.jpg' %}" alt="">
+                <div>
+                <h4>Nazriya Fahad</h4>
+                </div>
+                <span class="image-caption"> follow </span>
+            </div>
+        </div>
+
+        <div class="sugg">
+            <div class="suggimg">
+                <img src="{% static '/images/fahadpropic.jpg' %}" alt="">
+                <div>
+                <h4>Fahad Fasil</h4>
+                </div>
+                <span class="image-caption"> follow </span>
+            </div>
+        </div>
+
+        <div class="sugg">
+            <div class="suggimg">
+                <img src="{% static '/images/ameerpropic.jpg' %}" alt="">
+                <div>
+                <h4>Ameer khan</h4>
+                </div>
+                <span class="image-caption"> follow </span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+{% endblock %}

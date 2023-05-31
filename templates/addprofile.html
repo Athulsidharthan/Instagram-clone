@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/addprofile.css' %}"> {% endblock %}
+
+<title>{% block title %} Add Profile • Instagram {% endblock %}</title>
+
+{% block content %} 
+
+    <div class="addprofile" >
+        <h6>Add profile</h6>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Image</h6></div>
+                <div class="profileinput">{{ form.image }}</div>
+            </div>
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Name</h6></div>
+                <div class="profileinput">{{ form.name }}</div>
+            </div>
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Bio</h6></div>
+                <div class="profileinput">{{ form.bio }}</div>
+            </div>
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Phone Number</h6></div>
+                <div class="profileinput">{{ form.phone }}</div>
+            </div>
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Date of Birth</h6></div>
+                <div class="profileinput">{{ form.dateofbirth }}</div>
+            </div>
+            <div class="addprofileoption" >
+                <div class="profilename"><h6>Gender</h6></div>
+                <div class="profileinput">{{ form.gender }}
+                    <h5>This won't be part of your public profile.</h5>
+                </div>
+
+            </div>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </div>
+
+{% endblock %}

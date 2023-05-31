@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+  }
+body {
+    display: flex;
+    background-color: #FAFAFA;
+    font-family: Segoe UI;
+    flex-direction: column;
+}
+.top_section {
+    display: flex;
+    margin-top: 20px;
+}
+.left_side {
+    position: relative;
+}
+.screen {
+    position: absolute;
+    left: 158px;
+    top: 27px;
+}
+.panel {
+    display: flex;
+    width: 340px;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+}
+.login {
+    flex-direction: column;
+}
+.logo {
+    width: 170px;
+    height: 51px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+form {
+    width: 268px;
+    text-align: center;
+}
+.inputbox {
+    width: 266px;
+    padding: 10px 0px;
+    margin-bottom: 08px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    text-indent: 10px;
+    font-size: 12px;
+}
+.button {
+    width: 268px;
+    height: 32px;
+    margin: 08px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F7FCFF;
+    background-color: #4DB5F9;
+    border-radius: 5px;
+    border: none;
+}
+.divider {
+    display: flex;
+    width: 268px;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 20px;
+    color: #8a8a8a;
+    margin-top: 9px;
+    margin-bottom: 25px;
+}
+.line {
+    background-color: #DBDBDB;
+    height: 1px;
+    flex: 1;
+}
+.fb_login i {
+    font-size: 18px;
+    padding-right: 8px;
+}
+.fb_login {
+    width: 268px;
+    height: 23px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.fb_login a{
+    color: #385185;
+}
+.forgot {
+    color: #00376B;
+    font-size: 12px;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+.panelmessage {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+.panelmessage h5{
+    color: #ed4956;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.signup {
+    justify-content: center;
+    font-size: 14px;
+}
+.signup a {
+    text-decoration: none;
+    color: #0095F6;
+    padding-left: 5px;
+    font-weight: 550;
+}
+.apps {
+    flex-direction: column;
+    font-size: 14px;
+    border: none;
+    margin-top: -10px;
+}
+.app-store{
+    margin-top: 18px;
+}
+.app_store_img1 {
+    width: 140;
+    height: 40px;
+}
+.app_store_img2 {
+    width: 123;
+    height: 40px;
+    margin-left: 5px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    list-style: none;
+    gap: 15px;
+    margin: 10px 0;
+}
+.last_footer li, a {
+    color: #8E8E8E;
+    text-decoration: none;
+}
+.last_footer {
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+@media (max-width: 998px){
+    .left_side {
+        display: none;
+    }
+    ul {
+        display: none;
+    }
+}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/views.css' %}"> 
+
+{% endblock %}
+
+{% block title %} Add Profile • Instagram {% endblock %}
+
+{% block content %} 
+
+<div>
+
+    <div class="mainleft">
+
+         <div class="mainleftcontainer">
+            
+            <div class="mainleftcontainerfull">
+                <div class="mainleftcontainerimg"><img src="{{a.user.profile.image.url}}" alt=""></div>
+                <div class="mainleftcontainername"><h5>{{a.user}}</h5></div>
+            </div>
+            <div class="containerimg">
+                <img class = "image" src="{{a.image.url}}" alt="">
+            </div>
+
+            <div class="containercaption"><h2>{{a.caption}}</h2></div>
+
+            <div class="containershare">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-comment" style="transform:scaleX(-1);"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-bookmark"></i>
+                </div>   
+            </div>
+
+            <div class="likes">
+                <h5>200k likes</h5>
+            </div>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <div class="viewoption" >
+                    <div class="commentname"><h6>Comment</h6></div>
+                    <div class="commentinput">{{ form.comment }}</div>
+                </div>
+                <input class="button" type="submit" value="Comment">
+            </form>
+
+            <div class="comments">
+                {% for i in cmt %}
+
+                <div class="commentsuser">
+                    <div class="commentsuserimg"><img src="{{i.user.profile.image.url}}" alt=""></div>
+                    <div class="commentsusername"><h5>{{i.user}}</h5></div>
+                    <h4>{{i.comment}}</h4>
+                </div>
+                
+
+                {% endfor %}
+            </div>
+
+
+
+
+
+
+
+        
+
+           
+    </div>
+
+</div>
+
+{% endblock %}

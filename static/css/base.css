@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .navbar {
+    width: 240px;
+    height: 100%;
+    border-right: 1px solid #dbdbdb;
+    position: fixed;
+    background-color: #fff;
+ }
+ .navbarimg{
+    width: 103px;
+    height: 29px;
+    margin: 35px 25px 25px;
+ }
+ .navbarimg img {
+    width: 100%;  
+ }
+ .navbarlog {
+    display: none;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    margin: 30px 0 28px 0;
+    font-size: 30px;
+    left: 17px;
+    text-align: center;   
+ }
+ .navbar a {
+    text-decoration: none;
+    color: black;
+ }
+ .navbaroption {
+    width: 216px;
+    padding: 5px 0;
+    margin: 8px 12px; 
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+ }
+ .navbaroption:hover {
+    background-color: #dbdbdb;
+ }
+ .navbaroptioni {
+    width: 38px;
+    height: 38px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border-radius: 5px;
+ }
+ .navbaroption h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+ }
+ .navbaroption:hover .navbaroptioni {
+    font-size: 24px;
+ }
+ ul {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    list-style: none;
+    gap: 15px;
+    margin: 10px 0;
+ }
+ .last_footer li, a {
+    color: #8E8E8E;
+    text-decoration: none;
+ }
+ .last_footer {
+    padding-top: 10px;
+    margin-bottom: 60px;
+ }
+ footer {
+    position: absolute;
+    bottom: 0px;
+    padding: 0 10px;
+    width: 800px;
+ }
+ .maincontents {
+    position:absolute;
+    left: 240px;
+ }
+ 
+ @media (max-width: 1104px){
+    ul {
+        display: none;
+    }
+    .navbarlog{
+       display: inline;
+    }
+    .navbarimg{
+       display: none;
+    }
+    .navbaroptionhome {
+       margin-top: 90px;
+    }
+    .navbaroption {
+       width: 50px;
+    }
+    .navbaroption h4 {
+       display: none;
+    }
+    .navbar {
+       width: 70px;
+       border-right: 1px solid #dbdbdb;
+    }
+    .navbaroption:hover {
+       background-color: #dbdbdb;
+    }
+    .maincontents {
+       position:absolute;
+       left: 70px;
+    }
+ }

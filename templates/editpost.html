@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/editpost.css' %}"> {% endblock %}
+
+<title>{% block title %} Edit Post • Instagram {% endblock %}</title>
+
+{% block content %} 
+
+    <div class="editpost" >
+        <h5>Edit post</h5>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="editpostoption" >
+                <div class="profilename"><h6>Image</h6></div>
+                <div class="profileinput">{{ form.image }}</div>
+            </div>
+            <div class="editpostoption" >
+                <div class="profilename"><h6>Caption</h6></div>
+                <div class="profileinput">{{ form.caption }}</div>
+            </div>
+            <input class="button" type="submit" value="Submit">
+        </form>
+    </div>
+
+{% endblock %}

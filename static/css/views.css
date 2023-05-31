@@ -1,0 +1,138 @@
+.mainleft {
+    padding: 0 120px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.containerimg {
+    width: 470px;
+    height: 600px;
+}
+.containerimg img {
+    width: 100%;
+    height: 100%;
+}
+.containercaption{
+    width: 470px;
+    margin-top: 10px;
+}
+.containercaption h2 {
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 400;
+}
+.mainleftcontainerfull {
+    display: flex;
+    align-items: center;
+    padding: 0px 0 30px;
+}
+.mainleftcontainerimg {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.mainleftcontainerimg img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.mainleftcontainername {
+    margin-left: 10px;
+}
+.mainleftcontainername h5{
+    font-size: 15px;
+    color: #262626;
+    font-weight: 600;
+}
+.button {
+    background-color: #4cb5f9;
+    border: none;
+    width: 78px;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-top: 12px;
+}
+.viewoption {
+    display: flex;
+    margin-top: 20px;
+}
+.commentname h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+.commentinput {
+    margin-left: 20px;
+}
+.form-control {
+    width: 380px;
+    padding: 3px 8px;
+    height: 70px;
+    display: block;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+}
+.comments {
+    margin-top: 40px;
+}
+.commentsuser {
+    display: flex;
+    align-items: center;
+    padding: 0px 0 20px;
+}
+.commentsuserimg {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.commentsuserimg img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.commentsusername {
+    margin-left: 10px;
+}
+.commentsusername h5{
+    font-size: 15px;
+    color: #262626;
+    font-weight: 700;
+}
+.commentsuser h4 {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.containershare {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    line-height: 60px;
+    word-spacing: 0.5em;
+}
+.likes {
+    margin-top: 10px;
+}
+.likes h5 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/images/instaicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {% block stylesheet %} {% endblock %}
+
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <div class="navbar">
+
+        <div class="navbarimg"><a href="/"><img src="{% static 'images/instalogo.png' %}"></a></div>
+        <div class="navbarlog"><a href="/"><i class="fa-brands fa-instagram"></i></a></div>
+
+        <a href="/feed">
+        <div class="navbaroption navbaroptionhome">
+            <div class="navbaroptioni">
+                <i class="fa-solid fa-house"></i>
+            </div>   
+            <h4>Home</h4>  
+        </div>
+        </a>   
+
+        <a href="/search">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>   
+                <h4>Search</h4>  
+            </div>
+        </a>
+
+        <a href="">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-regular fa-compass"></i>
+                </div>   
+                <h4>Explore</h4>  
+            </div>
+        </a>   
+
+        <a href="">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-solid fa-circle-play"></i>
+                </div>   
+                <h4>Reels</h4>  
+            </div>
+        </a>
+
+        <a href="">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </div>   
+                <h4>Messages</h4>  
+            </div>
+        </a>   
+
+        <a href="">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-regular fa-heart"></i>
+                </div>   
+                <h4>Notifications</h4>  
+           </div>
+        </a>
+
+        <a href="/addpost">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-solid fa-square-plus"></i>
+                </div>   
+                <h4>Create</h4>  
+            </div>
+        </a>   
+
+        <a href="/profile">
+            <div class="navbaroption">
+                <div class="navbaroptioni">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>   
+                <h4>Profile</h4>  
+            </div>
+        </a>
+
+        <a href=""> 
+            <div class="navbaroption" style="margin-top: 170px;">
+                <div class="navbaroptioni">
+                    <i class="fa-solid fa-bars"></i>
+                </div>   
+                <h4>More</h4>  
+            </div>
+        </a>
+
+    </div>
+
+    <div class="maincontents">
+
+        {% block content %} {% endblock %}
+
+        <footer>
+            <ul>
+                <a href="#">Meta</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Jobs</a>
+                <a href="#">Help</a>
+                <a href="#">API</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Top Accounts</a>
+                <a href="#">Locations</a>
+                <a href="#">Instagram Lite</a>
+                <a href="#">Contact Uploading & Non-Useres</a>
+            </ul>
+
+            <ul class="last_footer">
+                <li>English</li>
+                <li>&copy; 2023 Instagram from Meta</li>     
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+</html>

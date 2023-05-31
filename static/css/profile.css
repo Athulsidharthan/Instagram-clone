@@ -1,0 +1,149 @@
+.profile {
+    margin-bottom: 150px;
+    padding: 60px;
+}
+.profiletop{
+    display: flex;
+}
+.profileimage {
+    width: 160px;
+    height: 160px;
+    margin: 0 100px 0 60px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileimage img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+.profileinfo1{
+    display: flex;
+    align-items: center;
+}
+.profileinfo1 h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.profileinfo1 a{
+    text-decoration: none;
+}
+.profileinfo1button {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: #efefef;
+    margin-left: 30px;
+    padding: 6px 12px;
+}
+.profileinfo1button:hover{
+    background-color: #8b8686;
+}
+.profileinfo1buttonlogout {
+    margin-left: 10px;
+}
+.profileinfo2 {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.profileinfo2 h5 {
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.profileinfo2 h5 span {
+    font-weight: 600;
+}
+.profileinfo3 h4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7rem;
+}
+.profileinfo3 h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+.line {
+    margin: 7px 0;
+    height: 2px;
+    background-color: #dbdbdb;
+}
+.profilebottom {
+    display: flex;
+    width: 938px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.profilebottomimg {
+    width: 309px;
+    height: 309px;
+    margin-bottom: 3px;
+}
+.profilebottomimg img {
+    width: 100%;
+    height: 100%;
+}
+.profilebottomedit {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.profilebottomedit h4 {
+    margin-right: 20px;
+    font-weight: 500;
+    color:lightslategray;
+}
+footer{
+    width: 1055px;
+}
+@media (max-width: 600px) {
+    .profile {
+        margin-bottom: 20px;
+        padding: 7px;
+    }
+    .profiletop{
+        display: inline;
+    }
+    .profileimage {
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        margin:10px 10px 10px 20px;
+    }
+    .profileinfo1{
+        display: inline;
+    }
+    .profilebottom {
+        display: inline;
+    }
+    .profilebottomimg {
+        width: 250px;
+        height: 300px;
+    }
+    .line {
+        margin: 20px 0;
+        height: 1px;
+    }
+    .profileinfo2 {
+        display: inline;
+    }
+    .profileinfo1button {
+        margin: 8px 10px 8px 0;
+        padding: 5px 10px;
+    }
+}
+
+.tablecell {
+    
+    height: 30px;
+    margin-left: 450px;
+
+}

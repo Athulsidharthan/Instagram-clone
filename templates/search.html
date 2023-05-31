@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block stylesheet %} <link rel="stylesheet" href="{% static 'css/search.css' %}"> {% endblock %}
+
+<title>{% block title %} Search - Profile {% endblock %}</title>
+
+{% block content %} 
+
+<div class="search" >
+
+    <div class="form">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+                <input class="input" type="search" placeholder="Search" name='searched'>
+                <input class="button" type="submit" value="Search">
+        </form>
+    </div>
+
+    {%for p in p%}
+    <div class="searchresult">  
+        
+        <div class="searchimg"><a href='/profile2/{{p.id}}'><img src="{{p.image.url}}" alt=""></a></div>
+        <div class="searchname"><a href='/profile2/{{p.id}}'><h4>{{p.name}}</h4></a></div>
+        
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

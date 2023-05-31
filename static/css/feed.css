@@ -1,0 +1,170 @@
+.mainleft {
+    padding: 0 120px;
+    margin-bottom: 150px;
+}
+.mainleftstatus {
+    width: 468px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.mainleftstatusimg{
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    
+}
+.mainleftstatus img {   
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}   
+.containerimg {
+    width: 468px;
+    height: 580px;
+}
+.containerimg img {
+    width: 100%;
+    height: 100%;
+}
+.containershare {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    line-height: 60px;
+    word-spacing: 0.5em;
+}
+
+.mainleftcontainerfull {
+    display: flex;
+    align-items: center;
+    padding: 0px 0 10px;
+}
+.mainleftcontainerimg {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.mainleftcontainerimg img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.mainleftcontainername {
+    margin-left: 10px;
+}
+.mainleftcontainername h5{
+    font-size: 15px;
+    color: #262626;
+    font-weight: 600;
+}
+.containercomments {
+    display: flex;
+    width: 468px;
+}
+.containercomments h6 {
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    font-weight: 400;
+}
+.line {
+    margin: 20px 0 25px;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+.likes h5 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.suggestions{
+ width: 400px;
+ height: 500px;
+ position: absolute;
+ left: 800px;
+ top: 20px;
+
+}
+
+.suggested{
+    margin-top: 100px;
+    margin-left: 10px;
+    color:lightslategray;
+}
+
+.primg img{
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 60%;
+}
+
+.pruser{
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
+.proimgid{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.suggimg img{
+    left: 10px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 60%;
+}
+
+.suggimg {
+    position: relative;
+  }
+  
+  .image-caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3897f0;
+    color: white;
+    padding: 6px;
+    border-radius: 7px;
+    right: 10px;
+   
+  }
+
+h4{
+    position: relative;
+    margin-left: 80px;
+    padding-top: 10px;
+}
+  
+.sugg{
+    margin-top: 40px;
+}
+  
+  
+  
+  
+  
+  
+
+
+
+

@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/images/instaicon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registration</title>
+</head>
+<body>
+
+    <section class="top_section">
+    
+        <div class=" right_side">
+    
+            <div class="panel login">
+                <img class="logo" src="{%static '/images/instalogo.png'%}" alt="Logo">
+
+                <button class="button buttonfb">
+                    <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                    Log in with Facebook
+                </button>
+                
+                <div class="divider">
+                    <div class="line">
+                    </div>
+                    <p>OR</p>
+                    <div class="line">
+                    </div>
+                </div>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <input class="inputbox" type="email" placeholder="E-mail" name="email"><br>
+                    <input class="inputbox" type="text" placeholder="First Name" name="firstname"><br>
+                    <input class="inputbox" type="text" placeholder="Last Name" name="lastname"><br>
+                    <input class="inputbox" type="text" placeholder="Username" name="username"><br>
+                    <input class="inputbox" type="password" placeholder="Password" name="password"><br>
+                    <button class="button" type="submit">Sign up</button>
+                </form>
+    
+    
+                    
+    
+                    
+
+            </div>
+            {% for i in messages %}           
+            <h1>{{i}}</h1>
+            {% endfor %}
+    
+           
+    
+            <div class="panel apps">
+                <p>Get the app.</p>
+    
+                <div class="app-store">
+                    <img class="app_store_img1" src="{%static '/images/googlePlay.jpg'%}" alt="Playstore">
+                    <img class="app_store_img2" src="{%static '/images/microsoft.jpg'%}" alt="Microsoft Store">
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+    
+        <ul>
+            <a href="https://about.meta.com/">Meta</a>
+            <a href="https://about.instagram.com/">About</a>
+            <a href="https://about.instagram.com/en_US/blog">Blog</a>
+            <a href="https://about.instagram.com/about-us/careers">Jobs</a>
+            <a href="https://help.instagram.com/">Help</a>
+            <a href="https://developers.facebook.com/docs/instagram">API</a>
+            <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a>
+            <a href="https://help.instagram.com/581066165581870/">Terms</a>
+            <a href="https://www.instagram.com/directory/profiles/">Top Accounts</a>
+            <a href="https://www.instagram.com/explore/locations/">Locations</a>
+            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+            <a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Useres</a>
+        </ul>
+    
+        <ul class="last_footer">
+            <li>English</li>
+            <li>&copy; 2023 Instagram from Meta</li>     
+        </ul>
+    
+    </footer>
+
+</body>
+</html>
